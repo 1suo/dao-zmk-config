@@ -1,7 +1,7 @@
 # Copyright (c) 2021 Rafael Yumagulov
 # SPDX-License-Identifier: MIT
 
-if BOARD_Zireael_LEFT
+if BOARD_Dao_LEFT
 
 	config ZMK_KEYBOARD_NAME
 	default "Zireael"
@@ -9,7 +9,7 @@ if BOARD_Zireael_LEFT
     config ZMK_SPLIT_BLE_ROLE_CENTRAL
 	default y
 
-endif # BOARD_Zireael_LEFT
+endif # BOARD_Dao_LEFT
 
 if BOARD_Dao_LEFT || BOARD_Dao_RIGHT
 
