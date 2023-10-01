@@ -4,17 +4,17 @@
 if BOARD_Zireael_LEFT
 
 	config ZMK_KEYBOARD_NAME
-	default "Zireael"
+	default "Dao"
 
     config ZMK_SPLIT_BLE_ROLE_CENTRAL
 	default y
 
 endif # BOARD_Zireael_LEFT
 
-if BOARD_Zireael_LEFT || BOARD_Zireael_RIGHT
+if BOARD_Dao_LEFT || BOARD_Dao_RIGHT
 
 config BOARD
-	default "zireael"
+	default "dao"
 
 config ZMK_SPLIT
 	default y
@@ -41,4 +41,4 @@ config USB_DEVICE_STACK
 
 endif # USB
 
-endif # BOARD_Zireael_LEFT || BOARD_Zireael_RIGHT
+endif # BOARD_Dao_LEFT || BOARD_Dao_RIGHT
