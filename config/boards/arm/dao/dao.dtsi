@@ -11,8 +11,8 @@
 
 
 / {
-	model = "zireael";
-	compatible = "zireael";
+	model = "dao";
+	compatible = "dao";
 
 	chosen {
 		zephyr,code-partition = &code_partition;
