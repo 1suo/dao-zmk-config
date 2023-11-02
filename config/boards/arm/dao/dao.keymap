@@ -54,6 +54,12 @@
 
             label = "SPC2";
         };
+        lang: lang {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LEFT_SHIFT)>;
+            label = "LANG";
+        };
     };
 
     keymap {
@@ -61,10 +67,10 @@
 
         default_layer {
             bindings = <
-&mt LEFT_WIN LEFT_WIN   &kp X  &kp B  &kp Y      &kp C            &kp D        &kp L       &kp H            &kp U      &kp P  &kp K  &kp SQT
-&mt LCTRL LEFT_BRACKET  &kp R  &kp S  &kp A      &kp T            &kp G        &kp F       &kp N            &kp E      &kp I  &kp O  &mt RCTRL SEMICOLON
-&mt LALT RIGHT_BRACKET  &kp Z  &kp V  &kp COMMA  &kp W            &kp ESC      &kp TILDE   &kp M            &kp DOT    &kp J  &kp Q  &mt RALT SLASH
-                                      &lt 2 TAB  &mt LSHFT SPACE  &lt 1 RET    &lt 1 BSPC  &mt RSHFT SPACE  &lt 2 DEL
+&mt LEFT_WIN LBKT       &kp X  &kp B  &kp Y      &kp C            &kp D        &kp H        &kp L          &kp U      &kp J  &kp K  &kp SQT
+&mt LCTRL ESC           &kp R  &kp S  &kp A      &kp T            &kp G        &kp F        &kp N          &kp E      &kp I  &kp O  &mt RCTRL SEMICOLON
+&mt LALT RIGHT_BRACKET  &kp Z  &kp V  &kp COMMA  &kp W            &kp GRAVE    &lang        &kp M          &kp DOT    &kp P  &kp Q  &mt RALT SLASH
+                                      &lt 2 TAB  &mt LSHFT SPACE  &lt 1 RET    &lt 1 MINUS  &kp BACKSPACE  &lt 2 DEL
             >;
         };
 
